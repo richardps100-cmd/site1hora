@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Me Pediram Um Site - Resolvido em menos de 1 hora</title>
+    
+    <!-- Prioridade Máxima: Preload da fonte Bold (usada no Hero) -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" as="style">
+    
+    <!-- SEO Básico -->
+    <meta name="description" content="Aprenda a criar e publicar seu site profissional em menos de 1 hora sem precisar de design ou programação. Sem custos ocultos.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://seusite.com.br/">
+    
+    <!-- Performance: Preconnect & DNS-Prefetch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://connect.facebook.net">
+    
+    <!-- Google Fonts com display=swap para evitar texto invisível -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Meta Pixel Code - Carregamento Assíncrono para não travar o Hero -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1342734950486304');
+    fbq('track', 'PageView');
+    </script>
+    
+    <!-- Tailwind via CDN - Usando versão específica para melhor cache e defer -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    
+    <style>
+        /* CSS Crítico para Renderização Instantânea */
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+            background-color: #ffffff;
+            color: #0f172a;
+        }
+        
+        /* Otimização de Performance para Seções Fora da Tela */
+        .cv-auto {
+            content-visibility: auto;
+            contain-intrinsic-size: 1px 500px; /* Reserva espaço para evitar saltos */
+        }
+
+        /* Evita Layout Shift no Hero */
+        #root { min-height: 100vh; }
+    </style>
+
+
+<link rel="stylesheet" href="/index.css">
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.3/",
+        "react": "https://esm.sh/react@^19.2.3",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+      }
+    }
+    </script>
+  <script type="module" crossorigin src="/assets/index-ktFnjx7m.js"></script>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Meta Pixel Noscript -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1342734950486304&ev=PageView&noscript=1"
+    /></noscript>
+    
+    <div id="root"></div>
+</body>
+</html>
